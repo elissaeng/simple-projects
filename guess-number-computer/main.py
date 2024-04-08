@@ -94,3 +94,17 @@ import random
 # check_number(-1)
 
 # endregion
+
+
+# EVEN OR ODD
+# region ------------------------------------------------
+# def even_or_odd(n):
+#     if n % 2 == 0:
+#         print('The number is even.')
+#     else:
+#         print('The number is odd.')
+
+# even_or_odd(24)
+# even_or_odd(9)
+
+# endregion
