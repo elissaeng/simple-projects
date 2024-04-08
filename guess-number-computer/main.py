@@ -38,42 +38,59 @@ import random
 # region ------------------------------------------------
 
 # Without a function
-get_temp = int(input(f'What is the temperature right now? '))
-if get_temp < 0:
-    print('Holy smokes it is freezing!')
-elif get_temp >= 0 and get_temp <= 10:
-    print('It is cold.')
-elif get_temp >= 11 and get_temp <= 20:
-    print('It is cool.')
-else: 
-    print('It is warm!')
+# get_temp = int(input(f'What is the temperature right now? '))
+# if get_temp < 0:
+#     print('Holy smokes it is freezing!')
+# elif get_temp >= 0 and get_temp <= 10:
+#     print('It is cold.')
+# elif get_temp >= 11 and get_temp <= 20:
+#     print('It is cool.')
+# else: 
+#     print('It is warm!')
 
-# With a function
-def temp():
-    get_temp = int(input(f'What is the temperature right now?'))
-    if get_temp < 0:
-        print('Holy smokes it is freezing!')
-    elif get_temp >= 0 and get_temp <= 10:
-        print('It is cold.')
-    elif get_temp >= 11 and get_temp <= 20:
-        print('It is cool.')
-    else: 
-        print('It is warm!')
+# # With a function
+# def temp():
+#     get_temp = int(input(f'What is the temperature right now?'))
+#     if get_temp < 0:
+#         print('Holy smokes it is freezing!')
+#     elif get_temp >= 0 and get_temp <= 10:
+#         print('It is cold.')
+#     elif get_temp >= 11 and get_temp <= 20:
+#         print('It is cool.')
+#     else: 
+#         print('It is warm!')
 
-temp()
+# temp()
 
-# With a paramater/argument
-def temp(temperature):
-    if temperature <= 0:
-        print('Holy smokes it is freezing. Go inside you"ll get frostbite')
-    elif temperature >= 0 and temperature <= 10:
-        print('It is a little chilly.')
-    elif temperature >= 11 and temperature <= 20:
-        print('It is a wee bit chilly.')
-    else:
-        print('Hooray it is warm!')
+# # With a paramater/argument
+# def temp(temperature):
+#     if temperature <= 0:
+#         print('Holy smokes it is freezing. Go inside you"ll get frostbite')
+#     elif temperature >= 0 and temperature <= 10:
+#         print('It is a little chilly.')
+#     elif temperature >= 11 and temperature <= 20:
+#         print('It is a wee bit chilly.')
+#     else:
+#         print('Hooray it is warm!')
 
-get_temp = int(input(f'What is the temperature right now? '))
-temp(get_temp)
+# get_temp = int(input(f'What is the temperature right now? '))
+# temp(get_temp)
+
+# endregion
+
+
+# NUMBER CHECKER
+# region ------------------------------------------------
+# def check_number(n):
+#     if n > 0:
+#         print('The number is positive.')
+#     elif n < 0:
+#         print('The number is negative.')
+#     else:
+#         print('The number is zero.')
+
+# check_number(0)
+# check_number(2)
+# check_number(-1)
 
 # endregion
