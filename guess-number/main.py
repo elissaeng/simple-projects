@@ -1,5 +1,7 @@
 import random
 
+# Practice using random.randint()
+
 # GUESS THE NUMBER (COMPUTER)
 # region ------------------------------------------------
 
@@ -34,29 +36,53 @@ import random
 # endregion
 
 
-
 # GUESS THE NUMBER (USER)
 # region ------------------------------------------------
-def computer_guess(x):
-    low = 1
-    high = x
-    feedback = ''
-    while feedback != 'c':
-        if low != high:
-            guess = random.randint(low, high)
-        else:
-            guess = low
-        feedback = input(f'Is {guess} too high (H), too low (L), or correct (C)? ').lower()
-        if feedback == 'h':
-            high = guess - 1
-        elif feedback == 'l':
-            low = guess + 1
-    print(f'Hooray! The computer guessed your number, {guess}, correctly!')
+# def computer_guess(x):
+#     low = 1
+#     high = x
+#     feedback = ''
+#     while feedback != 'c':
+#         if low != high:
+#             guess = random.randint(low, high)
+#         else:
+#             guess = low
+#         feedback = input(f'Is {guess} too high (H), too low (L), or correct (C)? ').lower()
+#         if feedback == 'h':
+#             high = guess - 1
+#         elif feedback == 'l':
+#             low = guess + 1
+#     print(f'Hooray! The computer guessed your number, {guess}, correctly!')
 
-computer_guess(10)
+# computer_guess(10)
 
 #endregion
 
+
+# MYSTERY NUMBER CHALLENGE
+# region ------------------------------------------------
+def play_game(low, high, attempts):
+    secret_number = random.randint(low, high)
+    print(f'Guess a number between {low} and {high}. You have {attempts} attempts.\n')
+    
+    for attempt in range(attempts):
+        guess = int(input('Enter your guess: '))
+        if guess == secret_number:
+            print('Congrats! You guessed correctly!')
+            return
+        elif guess < secret_number:
+            print('Too low!')
+        else:
+            print('Too high!')
+
+    print(f'Sorry, you ran out of attempts. The secret number was {secret_number}')
+
+play_game(1, 15, 3)
+
+#endregion
+
+
+# Practice with conditionals:
 
 # TEMPERATURE CHECKER
 # region ------------------------------------------------
